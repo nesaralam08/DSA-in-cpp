@@ -18,14 +18,14 @@ class Solution {
         // Your code here
         int n = arr.size();
         int ans = 0;
-        int t = 0;
+        int temp = 0;
         for(int i=1;i<n;i++){
             if(arr[i]>arr[i-1]){
-                t++;
-                ans = max(ans,t);
+                temp++;
+                ans = max(ans,temp);
             }
             else
-                t = 0;
+                temp = 0;
         }
         return ans;
     }
