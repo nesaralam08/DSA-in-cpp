@@ -16,6 +16,8 @@
 // 1 <= k <= 100
 // 1 <= arr[i] <= 104
 
+#include<bits/stdc++.h>
+using namespace std;
 class Solution{
   public:
     int minimizeCost(int k, vector<int>& arr) {
