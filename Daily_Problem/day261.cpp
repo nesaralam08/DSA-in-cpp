@@ -17,20 +17,20 @@
 // 1 <= number of nodes <= 105
 // 1 <= node->data <= 103
 
-#define mod 1000000007
-class solution {
-  public:
-    void get(Node*temp,long long &n){
-        while(temp){
-            n = ((n*10)+temp->data)%mod;
-            temp = temp->next;
-        }
-    }
-    long long multiplyTwoLists(Node *first, Node *second) {
-        // code here
-        long long n1=0,n2=0;
-        get(first,n1);
-        get(second,n2);
-        return (n1*n2)%mod;
-    }
-};
+// #define mod 1000000007
+// class solution {
+//   public:
+//     void get(Node*temp,long long &n){
+//         while(temp){
+//             n = ((n*10)+temp->data)%mod;
+//             temp = temp->next;
+//         }
+//     }
+//     long long multiplyTwoLists(Node *first, Node *second) {
+//         // code here
+//         long long n1=0,n2=0;
+//         get(first,n1);
+//         get(second,n2);
+//         return (n1*n2)%mod;
+//     }
+// };
